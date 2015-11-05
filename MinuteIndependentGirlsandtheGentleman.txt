@@ -1,0 +1,73 @@
+~~~~~~ Minuta 1 ~~~~~~
+	* Topic întâlnire: Status Meeting
+* 03.11.2015/17.00-19.00
+
+== Agendă ==
+
+-- se completează la planificarea întâlnirii
+* Stare actuala proiect; 
+* Distribuire sarcini pana la urmatoarea sedinta;
+
+== Participanți ==
+
+-- se completează înainte de începerea discuţiilor
+* Buțacu Raluca
+* Pătru Luiza
+* Zorilă Andreea
+
+== Discuții ==
+
+-- minuta întâlnirii pe parcursul discuției
+* Inițiale1: Proiectul are interfata grafica functionala.
+* Inițiale2: Generare litere random si parsarea input-ului utilizatorului.
+* Inițiale3: Software Design Document in progres.
+* Inițiale4: TODO: Validare input utilizator. 
+* Inițiale5: TODO: Cronometru si Scor.  
+
+== Decizii/concluzii ==
+
+-- imediat după încheierea discuției
+* Urmatoarea intalnire de implementare va fi pe 04.11.2015 si vom solutiona problema validarii input-ului.
+* Urmatoarea intalnire de status va fi pe 07.11.2015.
+* Actualizare SDD.
+* Ne incadram in deadline.
+
+
+	
+~~~~~~ Minuta 2 ~~~~~~
+	* Topic întâlnire: Status Meeting
+* 07.11.2015/16.00-18.00
+
+== Agendă ==
+
+-- se completează la planificarea întâlnirii
+* Stare actuala proiect; 
+* Distribuire sarcini pana la urmatoarea sedinta;
+
+== Participanți ==
+
+-- se completează înainte de începerea discuţiilor
+* Buțacu Raluca
+* Pătru Luiza
+* Zorilă Andreea
+* Popescu Andreea
+* Cudlenco Nicolae
+
+== Discuții ==
+
+-- minuta întâlnirii pe parcursul discuției
+* Inițiale1: Proiectul are interfata grafica functionala.
+* Inițiale2: Generare litere random si parsarea input-ului utilizatorului.
+* Inițiale3: Software Design Document in progres.
+* Inițiale4: Validare input utilizator finalizata. 
+* Inițiale5: TODO: Cronometru si Scor. 
+
+== Decizii/concluzii ==
+
+-- imediat după încheierea discuției
+* Urmatoarea intalnire de dezvoltare va fi pe 08.11.2015 si vom solutiona cronometrul si scorul utilizatorului.
+* Urmatoarea intalnire de status va fi pe 10.11.2015.
+* Actualizare SDD.
+* Ne incadram in deadline.
+	
+	
