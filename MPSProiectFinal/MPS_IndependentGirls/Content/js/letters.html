@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+
+<style type="text/css">
+    .tg {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+
+        .tg td {
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            padding: 8px 18px;
+            border-style: solid;
+            border-width: 10px;
+            overflow: hidden;
+            word-break: normal;
+        }
+
+        .tg th {
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            font-weight: normal;
+            padding: 8px 18px;
+            border-style: solid;
+            border-width: 10px;
+            overflow: hidden;
+            word-break: normal;
+        }
+
+        .tg .tg-tlo0 {
+            font-weight: bold;
+            font-size: 28px;
+            font-family: Arial, Helvetica, sans-serif !important;
+            background-color: #d61212;
+            color: #ffffff;
+            text-align: center;
+        }
+</style>
+
+
+
+<head>
+    <title>Caruselul Literelor</title>
+    
+</head>
+
+<body ng-app="myApp" ng-controller="letters" style="width:100%; background:url('../img/bk.jpg'); background-size: cover;">
+ 
+
+        <script src="LettersController.js"></script>
+        <script src="../lib/angular-timer.js"></script>
+     
+    
+    <div style='width:800px;'>
+        <h1><font size=25px color=#A52A2A face="Sans-serif"><center>Caruselul Literelor</center></font></h1>
+
+        <center>
+
+            <form ng-click="startWithRandom9Letters()">
+                <input type="image" src="../img/start.png" width="200" height="230">
+            </form>
+
+            <br>
+           
+            <div ng-show="visibleTimer">
+                <h2><b>{{mins}}:{{secs}}</b></h2>
+            </div>
+
+            <div ng-show="finishMessageHappy" style='width:800px;'>
+                <font size=6px color=#A52A2A face="Sans-serif"><center><b><br>Felicitări! <br> Ai ghicit {{nrWords}} cuvinte și ai acumulat {{score}} puncte! </b></center></font>
+            </div>
+
+            <div ng-show="finishMessageSad" style='width:800px;'>
+                <font size=6px bold="1" color=#A52A2A face="Sans-serif"><center><b><br>Ne pare rău! <br> Ai ghicit doar {{nrWords}} cuvinte și ai acumulat {{score}} puncte! <br> Mai încearcă! </b></center></font>
+            </div>
+
+                <table ng-show="tableVisible" class="tg">
+                    <tr>
+                        <th class="tg-tlo0">{{nineLetters[0]}}</th>
+                        <th class="tg-tlo0">{{nineLetters[1]}}</th>
+                        <th class="tg-tlo0">{{nineLetters[2]}}</th>
+                    </tr>
+                    <tr>
+                        <td class="tg-tlo0">{{nineLetters[3]}}</td>
+                        <td class="tg-tlo0">{{nineLetters[4]}}</td>
+                        <td class="tg-tlo0">{{nineLetters[5]}}</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-tlo0">{{nineLetters[6]}}</td>
+                        <td class="tg-tlo0">{{nineLetters[7]}}</td>
+                        <td class="tg-tlo0">{{nineLetters[8]}}</td>
+                    </tr>
+                </table>
+
+                <br>
+
+                <form ng-show="inputVisible">
+                    <b>
+                    Introduceți cuvintele (separate prin virgulă):<br>
+                    Atentie! Cuvintele acceptate trebuie sa aiba minim 4 litere!<br>
+                    </b>
+                    <input class="btn btn-default" ng-model="inputString" type="text" name="cuvinte" size=50>
+                    <input class="btn btn-primary" id="verify" type="button" value="Verificare" ng-click="checkWords()"
+                </form>
+
+
+    </center>
+
+</div>
+
+        
+
+   
+    
+   
+
+</body>
+
+</html>
+
